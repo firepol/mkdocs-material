@@ -267,7 +267,8 @@ $codehilite-whitespace: transparent;
 
   // Block with line numbers
   .codehilitetable {
-    display: block;
+    /* display: block; firepol: line numbers appear as table header instead of being on the left */
+    display: table-cell;
     margin: 1em 0;
     border-radius: 0.2em;
     font-size: ms(0);
@@ -277,7 +278,8 @@ $codehilite-whitespace: transparent;
     // hacking won't work correctly
     tbody,
     td {
-      display: block;
+      /* display: block; firepol: line numbers appear as table header instead of being on the left */
+      display: table-cell;
       padding: 0;
     }
 
